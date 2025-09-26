@@ -1,0 +1,14 @@
+{
+    "name": "Python 3.10 Codespace for Image Processing",
+    "image": "mcr.microsoft.com/devcontainers/python:0-3.10",
+
+    "postCreateCommand": "sudo apt-get update && sudo apt-get install -y libgl1 && pip install --upgrade pip && pip install torch torchvision torchaudio opencv-contrib-python-headless realesrgan basicsr numpy",
+
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python"
+            ]
+        }
+    }
+}
